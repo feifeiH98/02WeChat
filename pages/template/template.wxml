@@ -1,0 +1,18 @@
+<!--pages/template/template.wxml-->
+<template name="templateDetail">
+  <view class="container">
+    <view class="headInfo">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>   
+    <text class="title">{{title}}</text>
+    <image class="bigImage" src="{{headImgSrc}}"></image>
+    <text class="textDetail">{{detail_content}}</text>
+    <view class="smallDetail">
+      <image src="{{detail_love_image1}}" ></image>
+      <text>{{love_count}}</text>
+      <image src="{{detail_love_image2}}"></image>
+      <text>{{attention_count}}</text>
+    </view>    
+  </view>
+</template>

@@ -1,0 +1,24 @@
+<!--pages/text_list/text_list.wxml-->
+<import src="/pages/template/template" />
+<view>
+  <swiper indicator-dots="true" indicator-color="pink" indicator-active-color="yellow" catchtap="PictureDetail" autoplay="true" interval="2000" circular="true">
+    <swiper-item >
+      <image data-detailId="0" src="/images/detail/list/bl.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-detailId="1" src="/images/detail/list/cat.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-detailId="2" src="/images/detail/list/crab.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-detailId="3" src="/images/detail/list/j5.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{datas}}" wx:key="index">
+    <view catchtap="textDetail" data-id="{{index}}">
+      <template is="templateDetail" data="{{...item}}"></template>
+    </view>   
+  </block>
+</view>
+

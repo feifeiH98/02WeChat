@@ -1,0 +1,42 @@
+/**index.wxss**/
+page{
+  background-color: #fdd;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 360rpx;
+  width: 100%;
+  text-align: center;
+
+}
+.user-motto{
+  color: red;
+
+}
+.enterWorld{
+  margin: 20rpx;
+}
+button{
+  background-color: rgb(245, 229, 139);
+}
+button>text{
+  font-size: 40rpx;
+  text-align: center;
+  align-items: center;
+}

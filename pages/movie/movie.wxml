@@ -1,0 +1,16 @@
+<!--pages/movie/movie.wxml-->
+<!-- <text>pages/movie/movie.wxml</text> -->
+<text class="title">好看治愈的电影</text>
+<view wx:for="{{movies}}" wx:key="index">
+  <view class="movieContainer">
+    <image src="{{item.image}}" class="image"></image>
+    <view class="textDetail">
+      <text class="name">{{item.name}}</text>
+      <text >导演：{{item.director}}</text> 
+      <text >演员：{{item.stars}}</text>
+      <text>类型：{{item.type}}</text>
+      <text>年份：{{item.year}}</text>  
+      <text class="rating">评分：{{item.rating}}</text>
+    </view>     
+  </view>
+</view>

@@ -1,0 +1,28 @@
+/* pages/movie/movie.wxss */
+.title{
+  color: goldenrod;
+  font-size: 40rpx;
+  text-align: center; 
+}
+.movieContainer{
+  display: flex;
+  border-bottom: 2rpx solid grey;
+  padding: 20rpx 0;
+}
+.image{
+  width: 280rpx;
+  height: 300rpx;
+}
+
+.textDetail text{
+  display: flex;
+  flex-flow : row;
+  font-size: 30rpx;
+  margin-left:20rpx;
+  padding-top:10rpx; 
+}
+
+ .textDetail .rating{
+  font-size: 40rpx;
+  color: red
+}
